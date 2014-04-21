@@ -1,0 +1,9 @@
+unipath
+Django<1.7
+Pillow
+South
+ipython
+psycopg2
+django-debug-toolbar
+
+-r django_cms.txt

@@ -1,11 +1,14 @@
-Django Venv skeletton                 
-=====================                                                                                                                                                                                   
-This is a specially flavored template for django projects, that makes a few assumptions that divert from the standard.  
+Virtualenv skeletton directory                 
+==============================                                                                                                                                                                          
+This is a directory for virtualenv templates. Each template will reside in its own directory and can be used freely.
+
+License: MIT
+
 
 Usage:
 ------
 ..
- $ git clone https://github.com/Libermentix/django_venv_skeletton
+ $ git clone https://github.com/Libermentix/venv_skeletton_directory
 
 
 Todos:

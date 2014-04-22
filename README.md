@@ -2,7 +2,10 @@ Virtualenv skeletton directory
 ==============================                                                                                                                                                                          
 This is a directory for virtualenv templates. Each template will reside in its own directory and can be used freely.
 
-License: MIT
+License: BSD
+Author: Felix Plitzko
+
+NO WARRANTY :-)
 
 
 Usage:

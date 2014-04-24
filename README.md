@@ -17,7 +17,7 @@ Usage:
 Todos:
 ------
 
-1) Documentation
-2) Tests
-3) Integrate with virtualenv custom template.
+1. Documentation
+2. Tests
+3. Integrate with virtualenv custom template.
 

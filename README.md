@@ -1,4 +1,4 @@
-Virtualenv skeletton directory                 
+Project skeletton directory                 
 ==============================                                                                                                                                                                          
 This is a directory for virtualenv templates. Each template will reside in its own directory and can be used freely.
 
@@ -11,7 +11,7 @@ NO WARRANTY :-)
 Usage:
 ------
 ..
- $ git clone https://github.com/Libermentix/venv_skeletton_directory
+ $ git clone https://github.com/Libermentix/project_skeletton_directory
 
 
 Todos:

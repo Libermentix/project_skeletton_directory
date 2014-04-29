@@ -2,7 +2,7 @@ from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
 from django.utils.translation import gettext as _
 
-from ._install.skeletton.profiles.models import AppUser
+from .models import AppUser
 
 
 class AppUserCreationForm(forms.ModelForm):

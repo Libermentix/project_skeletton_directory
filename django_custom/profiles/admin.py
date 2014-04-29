@@ -7,8 +7,8 @@ logger = logging.getLogger(__name__)
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from ._install.skeletton.profiles.forms import AppUserCreationForm, AppUserAdminChangeForm
-from ._install.skeletton.profiles.models import AppUser
+from .forms import AppUserCreationForm, AppUserAdminChangeForm
+from .models import AppUser
 
 
 class AppUserAdmin(UserAdmin):

@@ -13,6 +13,8 @@ Usage:
 ..
  $ git clone https://github.com/Libermentix/project_skeletton_directory
 
+The directory django_custom can be seen as an example.
+copied like this it would provide the base for a django_cms.
 
 Todos:
 ------

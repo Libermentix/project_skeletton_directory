@@ -1,8 +1,12 @@
 #################################
 #   Import core settings        #
 #################################
-from .core_settings import *
-from .logger import *
+from .includes.core import *
+from .includes.logger import *
+from .includes.async import *
+from .includes.database import *
+from .includes.i18n_tz import *
+
 
 #################################
 #    Administrator and Manager  #
@@ -53,8 +57,6 @@ if DEBUG:
     INSTALLED_APPS += ('debug_toolbar',)
     MIDDLEWARE_CLASSES = ('debug_toolbar.middleware.DebugToolbarMiddleware',) \
                      + MIDDLEWARE_CLASSES
-
-
 
 
 ###########################################

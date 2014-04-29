@@ -1,7 +1,7 @@
 #################################
 #   Import core settings        #
 #################################
-from .includes.core import *
+from .includes.core_settings import *
 from .includes.logger import *
 from .includes.async import *
 from .includes.database import *

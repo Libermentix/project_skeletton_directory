@@ -1,5 +1,6 @@
 ###
 #   CORE configuration
+#   core_settings.py
 ###
 
 from unipath import Path

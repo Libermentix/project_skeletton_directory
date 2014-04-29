@@ -1,4 +1,4 @@
-from _install.skeletton.core.utils import get_env_variable
+from ..core.utils import get_env_variable
 
 DATABASES = {
     'default': {

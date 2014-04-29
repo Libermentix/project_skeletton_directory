@@ -4,7 +4,7 @@
 
 from unipath import Path
 
-from _install.skeletton.core.utils import get_env_variable
+from ..core.utils import get_env_variable
 from .variables import (
     PROJECT_PATH, _STATIC_ROOT, _MEDIA_ROOT, LOG_DIR
 )
@@ -56,9 +56,7 @@ SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 DEBUG = bool(get_env_variable('DJANGO_DEBUG'))
 TEMPLATE_DEBUG = DEBUG
 
-ADMINS = (
-    ('Felix Plitzko', 'felix.plitzko@libermentix.com'),
-)
+
 
 MANAGERS = ADMINS
 

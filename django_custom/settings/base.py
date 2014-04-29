@@ -1,8 +1,17 @@
 #################################
 #   Import core settings        #
 #################################
-from ._install.skeletton.settings.core_settings import *
-from ._install.skeletton.settings.logger import *
+from .core_settings import *
+from .logger import *
+
+#################################
+#    Administrator and Manager  #
+#################################
+
+ADMINS = (
+    ('<Enter>', '<email>'),
+)
+MANAGERS = ADMINS
 
 #################################
 #   USER specific settings      #
@@ -40,8 +49,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # DEBUG Section for settings.Debug = TRUE #
 ###########################################
 
-INSTALLED_APPS += ('debug_toolbar',)
 if DEBUG:
+    INSTALLED_APPS += ('debug_toolbar',)
     MIDDLEWARE_CLASSES = ('debug_toolbar.middleware.DebugToolbarMiddleware',) \
                      + MIDDLEWARE_CLASSES
 

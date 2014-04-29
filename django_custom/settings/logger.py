@@ -1,4 +1,4 @@
-from ._install.skeletton.settings.variables import LOG_DIR
+from .variables import LOG_DIR
 
 ###
 #   Logging

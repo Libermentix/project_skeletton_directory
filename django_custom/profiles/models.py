@@ -6,6 +6,7 @@ from django.db import models
 from django.utils.translation import gettext as _
 
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin
+from .managers import AppUserManager
 
 
 class BaseAppUser(AbstractBaseUser, PermissionsMixin):
@@ -19,7 +20,7 @@ class BaseAppUser(AbstractBaseUser, PermissionsMixin):
 
     USERNAME_FIELD = 'email'
 
-    objects = ''
+    objects = AppUserManager()
 
     def __unicode__(self):
         return unicode(self.email)

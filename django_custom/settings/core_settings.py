@@ -4,7 +4,7 @@
 
 from unipath import Path
 
-from ..core.utils import get_env_variable
+from core.utils import get_env_variable
 from .variables import (
     PROJECT_PATH, _STATIC_ROOT, _MEDIA_ROOT, LOG_DIR
 )
@@ -24,7 +24,7 @@ STATICFILES_DIRS = (
 )
 
 WSGI_APPLICATION = 'run.wsgi.application'
-ROOT_URLCONF = '_install.skeletton.run.urls'
+ROOT_URLCONF = 'run.urls'
 
 SITE_ID = 1
 
@@ -55,10 +55,6 @@ MEDIA_URL = get_env_variable('DJANGO_MEDIA_URL')
 SECRET_KEY = get_env_variable('DJANGO_SECRET_KEY')
 DEBUG = bool(get_env_variable('DJANGO_DEBUG'))
 TEMPLATE_DEBUG = DEBUG
-
-
-
-MANAGERS = ADMINS
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',

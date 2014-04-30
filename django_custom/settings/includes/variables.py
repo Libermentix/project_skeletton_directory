@@ -1,9 +1,9 @@
 from unipath import Path
 
-#################
-#   Variables   #
-#################
-PROJECT_PATH = Path(__file__).ancestor(2)
+########################
+#   Global Variables   #
+########################
+PROJECT_PATH = Path(__file__).ancestor(3)
 _STATIC_ROOT = PROJECT_PATH.child('assets').child('static')
 _MEDIA_ROOT = PROJECT_PATH.child('assets').child('uploads')
 

@@ -69,76 +69,76 @@ if DEBUG:
 ###########################################
 #   DJANGO-CMS                            #
 ###########################################
-MIDDLEWARE_CLASSES += (
-    'cms.middleware.user.CurrentUserMiddleware',
-    'cms.middleware.page.CurrentPageMiddleware',
-    'cms.middleware.toolbar.ToolbarMiddleware',
-    'cms.middleware.language.LanguageCookieMiddleware',
-)
-
-TEMPLATE_CONTEXT_PROCESSORS += (
-    'cms.context_processors.media',
-    'sekizai.context_processors.sekizai',
-)
-
-INSTALLED_APPS += (
-    'djangocms_admin_style',
-    'djangocms_text_ckeditor',
-    'cms',
-    'mptt',
-    'menus',
-    'south',
-    'sekizai',
-    'djangocms_style',
-    'djangocms_column',
-    'djangocms_file',
-    'djangocms_flash',
-    'djangocms_googlemap',
-    'djangocms_inherit',
-    'djangocms_link',
-    'djangocms_picture',
-    'djangocms_teaser',
-    'djangocms_video',
-    'reversion',
-)
-
-CMS_LANGUAGES = {
+#MIDDLEWARE_CLASSES += (
+#    'cms.middleware.user.CurrentUserMiddleware',
+#    'cms.middleware.page.CurrentPageMiddleware',
+#    'cms.middleware.toolbar.ToolbarMiddleware',
+#    'cms.middleware.language.LanguageCookieMiddleware',
+#)
+#
+#TEMPLATE_CONTEXT_PROCESSORS += (
+#    'cms.context_processors.media',
+#    'sekizai.context_processors.sekizai',
+#)
+#
+#INSTALLED_APPS += (
+#    'djangocms_admin_style',
+#    'djangocms_text_ckeditor',
+#    'cms',
+#    'mptt',
+#    'menus',
+#    'south',
+#    'sekizai',
+#    'djangocms_style',
+#    'djangocms_column',
+#    'djangocms_file',
+#    'djangocms_flash',
+#    'djangocms_googlemap',
+#    'djangocms_inherit',
+#    'djangocms_link',
+#    'djangocms_picture',
+#    'djangocms_teaser',
+#    'djangocms_video',
+#    'reversion',
+#)
+#
+#CMS_LANGUAGES = {
     ## Customize this
-    'default': {
-        'hide_untranslated': False,
-        'redirect_on_fallback': True,
-        'public': True,
-    },
-    1: [
-        {
-            'redirect_on_fallback': True,
-            'code': 'NL',
-            'hide_untranslated': False,
-            'name': gettext('NL'),
-            'public': True,
-        },
-        {
-            'redirect_on_fallback': True,
-            'code': 'EN',
-            'hide_untranslated': False,
-            'name': gettext('EN'),
-            'public': True,
-        },
-        {
-            'redirect_on_fallback': True,
-            'code': 'DE',
-            'hide_untranslated': False,
-            'name': gettext('DE'),
-            'public': True,
-        },
-    ],
-}
-CMS_TEMPLATES = (
+#    'default': {
+#        'hide_untranslated': False,
+#        'redirect_on_fallback': True,
+#        'public': True,
+#    },
+#    1: [
+#        {
+#            'redirect_on_fallback': True,
+#            'code': 'NL',
+#            'hide_untranslated': False,
+#            'name': gettext('NL'),
+#            'public': True,
+#        },
+#        {
+#            'redirect_on_fallback': True,
+#            'code': 'EN',
+#            'hide_untranslated': False,
+#            'name': gettext('EN'),
+#            'public': True,
+#        },
+#        {
+#            'redirect_on_fallback': True,
+#            'code': 'DE',
+#            'hide_untranslated': False,
+#            'name': gettext('DE'),
+#            'public': True,
+#        },
+#    ],
+#}
+#CMS_TEMPLATES = (
     ## Customize this
-    ('fullwidth.html', 'Fullwidth'),
-    ('sidebar_left.html', 'Sidebar Left'),
-    ('sidebar_right.html', 'Sidebar Right')
-)
+#    ('fullwidth.html', 'Fullwidth'),
+#    ('sidebar_left.html', 'Sidebar Left'),
+#    ('sidebar_right.html', 'Sidebar Right')
+#)
 
-CMS_PERMISSION = True
-CMS_PLACEHOLDER_CONF = {}
+#CMS_PERMISSION = True
+#CMS_PLACEHOLDER_CONF = {}

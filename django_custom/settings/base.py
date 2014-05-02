@@ -30,6 +30,13 @@ AUTHENTICATION_BACKENDS = (
 
 # deprecated
 # AUTH_PROFILE_MODULE = ''
+#################################
+#   ADmin Shortcuts             #
+#################################
+# see https://github.com/alesdotio/django-admin-shortcuts/ for details
+#ADMIN_SHORTCUTS = [
+#
+#]
 
 ################################
 #   EMAIL Section              #

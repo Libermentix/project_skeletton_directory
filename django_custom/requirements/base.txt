@@ -5,5 +5,9 @@ South
 ipython
 psycopg2
 django-debug-toolbar
+pytz
 
--r django_cms.txt
+#some nice addons
+django-admin-shortcuts
+
+#-r django_cms.txt

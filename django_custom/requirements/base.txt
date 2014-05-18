@@ -11,3 +11,4 @@ pytz
 django-admin-shortcuts
 
 #-r django_cms.txt
+#-r django_async.txt

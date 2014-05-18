@@ -1,7 +1,7 @@
 #########################################
 #   Asyncronous Messaging Services      #
 #########################################
-
+from core.utils import get_env_variable
 ##
 ## CELERY SECTION
 ##

@@ -142,3 +142,9 @@ if DEBUG:
 
 #CMS_PERMISSION = True
 #CMS_PLACEHOLDER_CONF = {}
+
+
+###########################################
+#   Django_Admin                          #
+###########################################
+INSTALLED_APPS += ('django.contrib.admin',)

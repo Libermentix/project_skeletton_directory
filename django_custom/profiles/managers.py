@@ -26,7 +26,7 @@ class AppUserManager(BaseUserManager):
 
         email = AppUserManager.normalize_email(email=email)
 
-        user = self.model(email=email)
+        user = self.model(email=email, *args, **kwargs)
 
         user.set_password(password)
         user.save(using=self._db)
@@ -34,11 +34,11 @@ class AppUserManager(BaseUserManager):
         return user
 
 
-    def create_superuser(self, email, password):
+    def create_superuser(self, email, password, *args, **kwargs):
         """
         creates a superuser with all admin flags set to true
         """
-        user = self.create_user(email=email, password=password)
+        user = self.create_user(email=email, password=password, *args, **kwargs)
         user.is_admin = True
         user.is_staff = True
         user.is_superuser = True
